@@ -1,0 +1,18 @@
+/* styles.css — RailReserve */
+.glass-white{ background: linear-gradient(180deg, rgba(255,255,255,.9), rgba(255,255,255,.8)); backdrop-filter: blur(8px); }
+.shadow-soft{ box-shadow: 0 10px 30px -12px rgba(0,0,0,.2); }
+.hero-rail{ background-image:url('https://etimg.etb2bimg.com/photo/111281165.cms'); background-size:cover; background-position:center; opacity:.25; }
+.screen-gradient{ background: linear-gradient(90deg, rgba(2,132,199,.15), rgba(2,132,199,.05)); }
+.no-scrollbar::-webkit-scrollbar{ display:none; }
+.chip{ cursor:pointer; }
+.seat{ transition: transform .12s ease, border-color .12s ease, background-color .12s ease; }
+.seat:hover{ transform: translateY(-2px); }
+.seat.selected{ outline: 2px solid #0ea5e9; box-shadow: 0 0 0 4px rgba(14,165,233,.15); }
+.seat.unavailable{ opacity:.35; cursor:not-allowed; }
+.ticket-card{ border:1px solid rgba(15,23,42,.08); border-radius:1rem; background:#fff; padding:1rem }
+.badge{ display:inline-flex; align-items:center; gap:.35rem; border:1px dashed rgba(15,23,42,.2); padding:.2rem .5rem; border-radius:.4rem; font-size:.7rem; background:#f0f9ff; color:#0369a1 }
+@media print{
+  nav, header, #search .btn, #availability .btn, #booking .btn, #checkoutModal, footer { display:none !important }
+  body{ background:#fff }
+  .glass-white{ background:#fff; box-shadow:none; border-color:#000 }
+}
